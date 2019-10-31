@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.todo-item {
+  background: #FFED49;
+  min-height: 50px;
+  margin: 24px 0;
+  border: 1px solid #2B2B2B;
+  border-radius: 8px;
+}
+
+.pagination {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  position: absolute;
+  width: 50%;
+  bottom: 64px;
+  left: 25%;
+}
+
+.pagination li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #2B2B2B;
+}
+
+.pagination a:hover {
+  text-decoration: none;
+}
+
+.pagination a:focus {
+  outline: none;
+}
+
+.pagination .active {
+  background: #FFED49;
+  border-radius: 50%;
+  border: 1px solid #2B2B2B;
+}
